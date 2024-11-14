@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Local Shop</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+</head>
+
+<body>
+
+    <div class="container bg-white my-5">
+
+        <!-- Head -->
+        <div class="row my-2">
+            <div class="col-md-7">
+                <h3 class="text-info-emphasis">Create Invoice</h3>
+            </div>
+            <div class="col-md-1">
+                <button>History</button>
+            </div>
+            <div class="col-md-2">
+                <button>All Product</button>
+            </div>
+            <div class="col-md-2">
+                <button>New Payment</button>
+            </div>
+        </div>
+
+        <!-- Customar & Invoice Details -->
+        <div class="row my-2">
+            <div class="col-md-6">
+                <div class="card">
+                    <h4 class="bg-info text-white">Invoice Details</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="width: 20%; padding-right: 1%; text-align: end;">Name</td>
+                                <td> <input type="text" placeholder="Ariful Islam"
+                                        style="width: 100%; text-align: center;"></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%; padding-right: 1%; text-align: end;">Phone</td>
+                                <td> <input type="text" placeholder="88019999" style="width: 100%; text-align: center;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 20%; padding-right: 1%; text-align: end;">Address</td>
+                                <td> <input type="text" placeholder="Uttara" style="width: 100%;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <h4 class="bg-info text-white">Invoice Details</h4>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td style="width: 30%; padding-right: 1%; text-align: end;">Invoice Number</td>
+                                <td> <input type="number" placeholder="55" style="width: 100%; text-align: center;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%; padding-right: 1%; text-align: end;">Holder Name</td>
+                                <td> <input type="text" placeholder="Akash" style="width: 100%; text-align: center;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 30%; padding-right: 1%; text-align: end;">Invoice Date</td>
+                                <td> <input type="date" placeholder="88019999" style="width: 50%; text-align: start;">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Invoice Item -->
+        <div class="card my-2">
+            <div class="row">
+                <div>
+                    <h4 class="bg-info text-white">Invoice Item</h4>
+                </div>
+                <div class="row mx-1 bg-warning">
+                    <div class="col-md-2">
+                        <label>Batch</label>
+                        <input type="number" placeholder="18202" class="form-control">
+                    </div>
+                    <div class="col-md-3">
+                        <label>Description</label>
+                        <input type="text" placeholder="Hondda 2012" class="form-control">
+                    </div>
+                    <div class="col-md-1">
+                        <label>Quantity</label>
+                        <input type="number" placeholder="1" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label>Unit Price</label>
+                        <input type="number" placeholder="2103000" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label>Discount %</label>
+                        <input type="number" placeholder="12" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label>Totat Price</label>
+                        <input type="number" placeholder="1850640.00" class="form-control">
+                    </div>
+
+                    <div class="col-md-11 my-1">
+                        <p>Note: Checked by Badol</p>
+                    </div>
+                    <div class="col-md-1 my-1">
+                        <button class="btn btn-warning text-primary" style="width: 100%;">Add</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Order List & Total Amount -->
+        <div class="row my-2">
+
+            <div class="col-md-8">
+                <div class="card">
+                    <div>
+                        <h4 class="bg-info text-white">Order List</h4>
+                    </div>
+
+                    <div class="O-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="col-md-7">Discription</th>
+                                    <th class="col-md-1">Quantity</th>
+                                    <th class="col-md-1">Discount</th>
+                                    <th class="col-md-2">Total Price</th>
+                                    <th class="col-md-1">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>X-corolla 2007 (1500cc)</td>
+                                    <td>1</td>
+                                    <td>10</td>
+                                    <td>1080000.00</td>
+                                    <td><button>Cancle</button></td>
+                                </tr>
+                                <tr>
+                                    <td>Hondda 2012</td>
+                                    <td>1</td>
+                                    <td>12</td>
+                                    <td>1850640.00</td>
+                                    <td><button>Cancle</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div>
+                        <h4 class="bg-info text-white">Total Amount</h4>
+                    </div>
+                    <div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="col-md-6">SUBTOTAL</td>
+                                    <td class="col-md-6"><input type="number" placeholder="2930640.00" style="text-align: center;"></td>
+                                </tr>
+                                <tr>
+                                    <td>VAT RATE</td>
+                                    <td><input type="number" placeholder="70" style="text-align: center;"></td>
+                                </tr>
+                                <tr>
+                                    <td>TOTAL VAT</td>
+                                    <td><input type="number" placeholder="2051448.00" style="text-align: center;" ></td>
+                                </tr>
+                                <tr>
+                                    <th>TOTAL</th>
+                                    <th><input type="number" placeholder="4982088.00" style="text-align: center;"></th>
+                                </tr>
+                        </table>
+                    </div>
+                    <div class="row my-2">
+                        <div class="col-md-6">
+                            <button class="btn btn-success text-white" style="width: 100%;">Save</button>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-success text-white" style="width: 100%;">Print</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
